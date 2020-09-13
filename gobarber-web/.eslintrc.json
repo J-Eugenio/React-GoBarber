@@ -41,9 +41,11 @@
               "tsx": "never"
             }
           ],
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", {
+           "endOfLine":"auto"
+        }],
         "no-use-before-define": [0],
-        "@typescript-eslint/no-use-before-define": [1]
+        "@typescript-eslint/no-use-before-define": [1],
     },
     "settings": {
         "react": { "version": "detect" },
