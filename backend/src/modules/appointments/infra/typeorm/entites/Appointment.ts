@@ -7,7 +7,7 @@ import {
     ManyToOne,
     JoinColumn
 } from 'typeorm'
-import User from './User'
+import User from '@module/users/infra/typeorm/entities/User'
 
 
 
