@@ -1,5 +1,7 @@
 import Appointment from '@module/appointments/infra/typeorm/entites/Appointment'
 import { startOfHour } from 'date-fns'
+import { inject, injectable } from 'tsyringe';
+
 import AppError from '@shared/errors/AppError'
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository'
 
@@ -8,8 +10,10 @@ interface Request{
     date: Date;
 }
 
+@injectable()
 class CreateAppointService {
   constructor(
+    @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
   ) {}
 
