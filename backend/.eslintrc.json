@@ -19,6 +19,9 @@
         "camelcase":"off",
         "no-unused-vars":"off",
         "import/extensions": "off",
-        "semi":"off"
+        "semi":"off",
+        "class-methods-use-this":"off",
+        "no-useless-constructor": "off",
+        "no-empty-function":"off"
     }
 }
